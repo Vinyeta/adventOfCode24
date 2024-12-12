@@ -6,6 +6,10 @@
         "algorithm": "cpp",
         "ostream": "cpp",
         "cstdlib": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "iostream": "cpp",
+        "xutility": "cpp"
     }
 }
