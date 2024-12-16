@@ -1,15 +1,8 @@
 {
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 26,
     "files.associations": {
-        "format": "cpp",
         "vector": "cpp",
-        "xstring": "cpp",
-        "algorithm": "cpp",
-        "ostream": "cpp",
-        "cstdlib": "cpp",
-        "iosfwd": "cpp",
-        "regex": "cpp",
-        "utility": "cpp",
-        "iostream": "cpp",
-        "xutility": "cpp"
+        "xstring": "cpp"
     }
 }
