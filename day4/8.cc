@@ -19,13 +19,16 @@ int main() {
 
         int totalXmas = 0;
 
-        for(int i = 0; i < data.size()-1; i++) {
+        for(int i = 1; i < data.size()-1; i++) {
             for(int j = 0; j < data[i].size()-1; j++) {
-                if((i < data.size()-1 && j < data[i].size()-1) || (i > 0 && j > 0)) {
-                    if(data[i][j] == 'A') {
-                        if(data[i+1][j+1] == 'S' && data[i-1][j-1] == 'M') {
-                            totalXmas++;
-                        }
+                if(data[i][j] == 'A') {
+                    if(
+                        ((data[i+1][j+1] == 'S' && data[i-1][j-1] == 'M') || 
+                        (data[i+1][j+1] == 'M' && data[i-1][j-1] == 'S')) && 
+                        ((data[i-1][j+1] == 'S' && data[i+1][j-1] == 'M') ||
+                        (data[i+1][j+1] == 'M' && data[i-1][j-1] == 'S'))
+                        ) {
+                        totalXmas++;
                     }
                 }
             }
